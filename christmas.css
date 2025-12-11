@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(image/assortment-festive-wrapped-presents.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: center;
+    max-height: 100vh;
+    background-attachment: fixed;
+    padding-top: 180px;
+    flex-direction: column;
+}
+.merry-christmas {
+    text-align: center;
+}
+h2 {
+    font-size: 3em;
+    color: #1366ff;
+    font-family: 'impact', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(image/christmas.jpeg);
+    background-size: 30%;
+    background-clip: text;
+    filter: saturate(1);
+    color: transparent;
+    animation: christmas 20s linear infinite;
+}
+@keyframes christmas {
+    to{
+        background-position: 500px;
+    }
+}
+
+.santa-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.santa{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+
+}
+.ideyprint {
+    width: 180px;
+}
+.merry-christmas p {
+    color: red;
+    font-family: "pacifico", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+.animate-rob{
+    width: 5%;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.rob, .shiny {
+    width: 50px;
+    
+}
+.rob {
+    animation: rob ease-in-out 2s infinite;
+}
+.shiny {
+    animation: shiny ease-in-out 2s infinite;
+}
+
+@keyframes rob {
+  0%   { transform: translateX(-15px) rotate(-5deg); }
+  50%  { transform: translateX(15px) rotate(5deg); }
+  100% { transform: translateX(-15px) rotate(-5deg); }
+}
+
+@keyframes shiny {
+    0% {transform: translateX(15px) rotate(5deg);}
+    50% {transform: translateX(-15px) rotate(-5deg);}
+    100% {transform: translateX(15px) rotate(5deg);}
+}
